@@ -8,9 +8,9 @@
             include 'config.php';// загружаем запросы
                 
             // Соединение с БД
-            $connect = new PDO("mysql:host=localhost;dbname=dbname;", "user", "password", array(
-            PDO::MYSQL_ATTR_LOCAL_INFILE => true,
-             ));
+                   include 'getenv.php';// загружаем переменные окружения
+                   
+                   
             // Сбор данных из списка ЖК
         
                 $ask_zhk = $connect->prepare('SELECT id, residential_complex t FROM residential_complexes');

@@ -1,7 +1,5 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+    include 'getenv.php';// загружаем переменные окружения (в теории))
 
         $connect = new PDO("mysql:host=localhost;dbname=dbname;", "user", "password", array(
         PDO::MYSQL_ATTR_LOCAL_INFILE => true,

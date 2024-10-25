@@ -1,9 +1,8 @@
 <?php
 
 
- $connect = new PDO("mysql:host=localhost;dbname=dbname;", "user", "password", array(
-        PDO::MYSQL_ATTR_LOCAL_INFILE => true,
-    ));
+    include 'getenv.php';// загружаем переменные окружения (в теории)
+    
     
     $offset='';
     $order='';
