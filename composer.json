@@ -1,0 +1,7 @@
+{
+    "scripts": {
+        "test": "phpunit",
+        "do-something": "MyVendor\\MyClass::doSomething"
+        "my-cmd": "MyVendor\\MyCommand"
+    }
+}
